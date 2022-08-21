@@ -19,8 +19,8 @@ public class Encoder {
     }
 
     @GetMapping("/encode")
-    ResponseEntity<String> encode(@RequestParam String s) {
-        return ResponseEntity.ok(service.encode(s));
+    ResponseEntity<String> encode(@RequestParam String iin) {
+        return ResponseEntity.ok(service.encode(iin));
     }
 
 
