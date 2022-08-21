@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1/encoder")
 public class HelloWorld {
 
-    @GetMapping
+    @GetMapping("/test")
     String test() {
-        return "Hello World";
+        return "Special for Ayuaniche";
     }
 
 }
