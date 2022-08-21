@@ -23,5 +23,10 @@ public class Encoder {
         return ResponseEntity.ok(service.encode(iin));
     }
 
+    @GetMapping("/decode")
+    ResponseEntity<String> decode(@RequestParam String iin) {
+        return ResponseEntity.ok(service.decode(iin));
+    }
+
 
 }

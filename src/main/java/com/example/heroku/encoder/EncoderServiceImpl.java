@@ -18,4 +18,9 @@ public class EncoderServiceImpl implements EncoderService {
     public String encode(String s) {
         return aesEncryptDecrypt.encrypt(s);
     }
+
+    @Override
+    public String decode(String s) {
+        return aesEncryptDecrypt.decrypt(s);
+    }
 }
